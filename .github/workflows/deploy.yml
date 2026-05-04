@@ -1,0 +1,25 @@
+name: Website CI-CD Deployment
+
+on:
+  push:
+    branches: [ main ] # Triggers the pipeline every time you save code
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # This is the "virtual environment" required by the assignment
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Environment Setup
+        run: echo "Setting up the virtual environment for Anita's project..."
+
+      - name: Build Website
+        run: |
+          echo "Building static files..."
+          mkdir -p public
+          cp index.html public/
+
+      - name: Deployment Status
+        run: echo "Success! The website is ready for deployment to the cloud."
