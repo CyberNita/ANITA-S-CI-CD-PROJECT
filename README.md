@@ -25,5 +25,5 @@ The deployment is managed by a custom YAML configuration (`.github/workflows/dep
 see attached CI/CD Pipeline Success image
 see attached Cloud Deployment Status image
 
-**##NOTE**
+**NOTE:**
 Vercel was used for deployment instead of azure/ AWS because my azure free trial is expired and AWS keep rejecting my card. Thank you for your understanding.
